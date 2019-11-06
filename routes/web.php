@@ -13,6 +13,8 @@
 
 use Illuminate\Support\Facades\Mail;
 
-Route::get('/');
+Route::get('/', function(){
+    return 'Dave';
+});
 Route::get('/verify/{email}', 'EmailVerificationsController@index')->name('verify.home');
 Route::post('/verify/code/{email}', 'EmailVerificationsController@verifycode')->name('verify.verifycode');
