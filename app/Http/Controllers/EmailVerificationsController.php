@@ -17,14 +17,11 @@ class EmailVerificationsController extends Controller
         ];
 
         Mail::send('mail.test', $data, function($message){
-            $message->to('rdavephp@gmail.com', '')->subject("Verify your Legacy-Interactive Account!");
+            $message->to($email, '')->subject("Verify your Legacy-Interactive Account!");
         });
 
         return view('verification.index', compact('email','random_key'));
 
-
-    }
-    public function verifycode(){
 
     }
 }
