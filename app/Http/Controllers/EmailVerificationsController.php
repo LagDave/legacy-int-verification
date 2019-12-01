@@ -14,8 +14,7 @@ class EmailVerificationsController extends Controller
         $random_key = mt_rand(150000, 990000);
 
         $data = [
-            'title'=>$random_key,
-            'content'=> "Use the code above to verify your account."
+            'random_key'=>$random_key
         ];
 
         Mail::send('mail.test', $data, function($message){

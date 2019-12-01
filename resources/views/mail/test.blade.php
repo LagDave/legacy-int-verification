@@ -8,7 +8,20 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>{{$title}}</h1>
-    <p>{{$content}}</p>
+    <p>
+        Thank you for being a part of Legacy-Interactive Remastered Edition,
+        <br> 
+        You Are receiving this email verfication to validate your account.</p>
+    <p>
+        Please be aware that you can only Registered Max of (3) Accounts with
+        <br>
+        Desame Email addresss (One-Time Validation Only)
+    </p>
+    <hr>
+    <h1>{{$random_key}}</h1>
+    <hr>
+    <p><i>Take note: Your password is your Responsibility.<br>
+            "Vengeance must always be profound and absolute"</i></p>
+
 </body>
 </html>
